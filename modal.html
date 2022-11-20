@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Modal-Crm</title>
+</head>
+<body>
+    <main>
+        <div class="container">
+          <div class="overlay">
+            <section class="modal">
+              <h2 class="modal__title">Добавить товар</h2>
+              <button class="modal__close"></button>
+              <form class="modal__form form" action="https://jsonplaceholder.typicode.com/posts">
+
+                <fieldset class="form__fieldset fieldset">
+
+                  <label class="fieldset__label fieldset__label-name">
+                    <p class="fieldset__text">Наименование</p>
+                    <input class="fieldset__input" type="text" name="name">
+                  </label>
+
+                  <label class="fieldset__label fieldset__label-category">
+                    <p class="fieldset__text">Категория</p>
+                    <input class="fieldset__input" type="text" name="category">
+                  </label>
+
+                  <label class="fieldset__label fieldset__label-units">
+                    <p class="fieldset__text">Единицы измерения</p>
+                    <input class="fieldset__input" type="text" name="units">
+                  </label>
+
+                  <fieldset class="fildset-wrap fildset-wrap-grid">
+                    <legend class="fildset-wrap__legend">Дисконт</legend>
+
+                    <label class="fieldset__label fildset-label__checkbox">
+                      <input class="fieldset__input fieldset__input-checkbox" type="checkbox" name="discont" value="" required="">
+                    </label>
+
+                    <label class="fieldset__label" for="discount-fields">
+                      <input class="fieldset__input fieldset__input-discount fieldset__input--active" type="text" name="discount-fields">
+                    </label>
+                  </fieldset>
+
+                  <label class="fieldset__label fieldset__label-description">
+                    <p class="fieldset__text">Описание</p>
+                    <textarea class="fieldset__texterea" name="description"></textarea>
+                  </label>
+
+                  <label class="fieldset__label fieldset__label-number">
+                    <p class="fieldset__text">Количество</p>
+                    <input class="fieldset__input" type="number" name="number">
+                  </label>
+
+                  <label class="fieldset__label fieldset__label-price">
+                    <p class="fieldset__text">Цена</p>
+                    <input class="fieldset__input" type="number" name="price" min="1">
+                  </label>
+
+                  <label class="fieldset__label fieldset__label-file">
+                    Добавить изображение
+                    <input class="fieldset__input-file" type="file" accept="image/png, image/gif, image/jpeg" name="file">
+                  </label>
+
+                </fieldset>
+
+                <div class="price">
+                  <p class="price__result">Итоговая стоимость:<span class="price__span">$900.00</span></p>
+                  <button class="price__btn" type="submit">Добавить товар</button>
+                </div>
+
+              </form>
+            </section>
+          </div>
+        </div>
+    </main>
+    
+</body>
+</html>
