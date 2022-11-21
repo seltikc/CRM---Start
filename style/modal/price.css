@@ -30,3 +30,19 @@
   background-color: #6D5BD0;
   border-radius: 6px;
 }
+
+@media (max-width: 700px) {
+  .price__btn {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 19px;
+    color: #FFFFFF;
+    padding: 10px 10px;
+    border-radius: 4px;
+  }
+
+  .price__result {
+    margin-right: 20px;
+  }
+}
+  

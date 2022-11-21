@@ -55,19 +55,26 @@ html {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 920px) {
+
   .container-crm {
     padding: 20px;
 }
 }
-  
+@media (max-width: 720px) {
+
+  .container-crm {
+    min-width: 720px;
+    padding: 20px;
+  }
+}
   .overlay {
     padding: 32px 105px;
     margin: auto;
     max-width: 792px;
     background-color: #F2F0F9;
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.25);
-    display: none;
+    /* display: none; */
   }
 
   .visually-hidden {

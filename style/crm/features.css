@@ -12,6 +12,11 @@
     padding: 10px;
     border: 1px solid #c6c2de;
     border-radius: 6px;
+    transition: 0.25s linear;
+}
+
+.features__filter:hover {
+    background-color: rgb(218, 216, 241);
 }
 
 .features__filter::before {
@@ -62,11 +67,18 @@
     border-image: initial;
 }
 
+
 .features__button {
     font-size: 16px;
     margin-right: 0px;
     margin-left: auto;
+    transition: 0.25s linear;
 }
+
+.features__button:hover {
+    background-color: #897dc9;  
+}
+
 
 @media (max-width: 1100px) {
     .features {
@@ -88,9 +100,28 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 920px) {
     .features {
         grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        padding-top: 20px;
+    }
+
+    .features__form {
+        grid-column: 1/4;
+        grid-row: 1/2;
+        width: 100%;
+    }
+    .features__button {
+        grid-column: 1/4;
+        grid-row: 3/4;
+        width: 100%;
+    }
+
+    .features__filter {
+        grid-column: 1/4;
+        grid-row: 2/3;
     }
 
 }
+
